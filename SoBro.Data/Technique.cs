@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace SoBro.Data
 {
 
-    public class Technique 
+    public class Technique
 
     {
         [Key]
@@ -18,6 +18,7 @@ namespace SoBro.Data
         [Required]
         public bool RequiresGi { get; set; }
         public enum BodyPart { shoulder, neck, knee, elbow, foot, wrist }
+        public BodyPart BodyArea {get; set;}
         public string Name { get; set; }
 
         [Range(1, 5, ErrorMessage = "Enter a difficulty between 1-5.")]

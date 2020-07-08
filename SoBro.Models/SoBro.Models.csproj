@@ -54,6 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\CompetitionListItem.cs" />
+    <Compile Include="Models\StudentCreate.cs" />
+    <Compile Include="Models\StudentListItem.cs" />
+    <Compile Include="Models\TechniqueListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

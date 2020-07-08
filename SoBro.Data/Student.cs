@@ -9,12 +9,18 @@ using System.Threading.Tasks;
 
 namespace SoBro.Data
 {
-    enum Rank { White = 1, Blue, Purple, Brown, Black }
+   public enum Rank { White = 1, Blue, Purple, Brown, Black }
     public class Student
     {
+        public Guid OwnerID { get; set; }
+
         [Key]
         [Required]
         public Guid StudentId { get; set; }
+
+        [Required]
+        public bool Active { get; set; }
+
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -26,8 +32,8 @@ namespace SoBro.Data
         public decimal Height { get; set; }
         [Required]
         public decimal Weight { get; set; }
-        [Required]
-        public Enum Rank { get; set; }
+        
+        public Rank Rank { get; set; }
 
         [ForeignKey("Competition")]
         [Required]
