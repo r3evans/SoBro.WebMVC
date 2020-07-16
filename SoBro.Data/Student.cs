@@ -12,7 +12,7 @@ namespace SoBro.Data
    public enum Rank { White = 1, Blue, Purple, Brown, Black }
     public class Student
     {
-        public Guid OwnerID { get; set; }
+        public Guid OwnerId { get; set; }
 
         [Key]
         [Required]
@@ -35,18 +35,15 @@ namespace SoBro.Data
         
         public Rank Rank { get; set; }
 
-        [ForeignKey("Competition")]
-        [Required]
+       // [ForeignKey("Competition")]
+       // [Required]
         public int CompetitionID { get; set; }
         public virtual Competition Competition { get; set; }
 
         [ForeignKey("Technique")]
-        [Required]
+      
         public int TechniqueID { get; set; }
         public virtual Competition Technique { get; set; }
     }
-    public class StudentDbContext : DbContext
-    {
-        public DbSet<Student> Students { get; set; }
-    }
+    
 }

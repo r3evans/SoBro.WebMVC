@@ -13,7 +13,7 @@ namespace SoBro.Models.Models
         public string LastName { get; set; }
         public Rank Rank { get; set; }
 
-        public Guid StudentID { get; set; }
+        public Guid StudentId { get; set; }
         public bool Active { get; set; }
         public int Age { get; set; }
     }

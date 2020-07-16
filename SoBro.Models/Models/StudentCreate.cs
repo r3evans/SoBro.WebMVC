@@ -12,7 +12,8 @@ namespace SoBro.Models.Models
     {
         [Key]
         [Required]
-        public Guid StudentId { get; set; }
+        public int StudentId { get; set; }
+        public Guid OwnerID { get; set; }
 
         [Required]
         public bool Active { get; set; }

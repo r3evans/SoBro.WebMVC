@@ -9,8 +9,10 @@ namespace SoBro.Models.Models
 {
    public class CompetitionListItem
     {
-        public int CompetitionID { get; set; }
+        public int CompetitionId { get; set; }
         public string Name { get; set; }
+        public string City { get; set; }
+        public bool Ranked { get; set; }
         
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }

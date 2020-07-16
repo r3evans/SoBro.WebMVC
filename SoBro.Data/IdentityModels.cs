@@ -33,6 +33,9 @@ namespace SoBro.Data
         }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<Technique> Techniques { get; set; }
+        public DbSet<Competition> Competitions { get; set; }
+        //public object Technique { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
